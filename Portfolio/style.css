@@ -1,0 +1,125 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@font-face {
+    font-family: "CirrusCumulus";
+    src: url(font/CirrusCumulus.woff) format("woff");
+}
+
+h1{
+    color: rgb(184, 207, 83);
+    font-family: "CirrusCumulus", cursive;
+  font-optical-sizing: auto;
+  font-weight: 10;
+  font-style: normal;
+}
+
+.img{
+    max-width: 100%;
+    height:auto; 
+}
+
+.item-large{
+    grid-row: span 2;
+}
+
+.header{
+    display: grid;
+    position: sticky;
+    top: 0;
+    grid-template-rows: 1fr auto;
+    height: 90vh;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+    padding-bottom: 20px ;
+}
+    /*border-bottom: 2px solid rgb(225, 104, 158);
+    /*border-radius: 5px;
+}
+
+.header-title{
+    margin: 4;
+}
+
+/*.header-nav*/
+
+
+.index .grid{
+    display: grid;
+        background-color: rgba(255, 255, 255, 0.749);
+        margin: auto;
+        grid-template-columns: repeat(auto-fit, minmax(920px, 1fr));
+        justify-content: center;
+        gap: 200px;
+        /* align-items: stretch; */
+        /* align-content: center; */
+    }
+    
+
+/*.projet-large{
+    background-color: aquamarine;
+    grid-column: 1/-1;
+}*/
+
+.balance{
+    text-wrap: balance;
+}
+
+.item{
+    display:grid;
+    background: #ffffff;
+    text-decoration: none;
+}
+  
+.item>*{
+    grid-column: 1;
+    grid-row:1;
+    justify-self:center;
+    align-self:center;
+    color:#75ef73;
+    transition:0.5s;
+}
+
+.item p{
+    font-size: 32px;
+    opacity:0;
+}
+
+.item:hover img{
+    opacity:0;
+}
+
+.item:hover p{
+    opacity:1;
+}
+
+.item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.index{
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    background-color: #53e948;
+    align-items: start;
+}
+
+
+.grid{
+    padding: 20px;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+
+     /*grid-template-columns: 1fr 1fr*/
+
+

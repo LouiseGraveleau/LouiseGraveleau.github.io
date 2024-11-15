@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "PicNic";
+    src: url(webfonts/PicNic.woff2) format("woff2"),
+        url(webfonts/PicNic.woff) format("woff");
+    
+}
+body{
+    background: pink;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    color: blue;
+    font-family: "PicNic", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p{
+    font-size: 20px;
+}
