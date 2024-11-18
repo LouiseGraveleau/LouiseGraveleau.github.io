@@ -55,23 +55,52 @@ h2 {
     line-height: 1.5;
 }
 
+h4 {
+    font-family: "CirrusCumulus";
+    font-size: 18px;
+    align-items: center;
+    font-weight: bolder;
+    justify-items: center;
+    color: rgb(151, 53, 53);
+    padding-left: 30px;
+    padding-right: 120px;
+    line-height: 1.5;
+}
+
+h5 {
+    font-family: "CirrusCumulus";
+    font-size: 18px;
+    align-items: left;
+    font-weight: bolder;
+    justify-items: left;
+    color: rgb(151, 53, 53);
+    padding-left: 700px;
+    
+    line-height: 1.5;
+}
+
 a {
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
-
+.grid-container {
+    perspective: 1000px;  /* Crée une perspective pour le retournement */
+  }
 
 .grid img {
-    transition: transform 1s ease-in-out;
+    transition: transform 5s ease-out; /* Durée de la transition pour l'effet */
 }
 
 /* transition photo */
 
-.grid img:hover {
-    transform: rotate(720deg);
+.grid .grid-projet:hover img {
+    transform: rotateZ(360deg);
     cursor: url(image/star.png)10 10, auto;
 }
 
+.grid .grid-projet:not (:hover) img {
+    transition: transform 6s ease-in; /* Animation plus rapide à la sortie */
+}
 
 
 
@@ -139,6 +168,7 @@ a {
 
 .grid-projet{
     background-color:white;
+    display: block;
 }
 
 
@@ -194,4 +224,30 @@ video {
     .grid-main2{
         grid-template-columns: 500px 1fr;
     }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .grid-projet2{
+    background-color:rgb(245, 141, 198);
+    display: block;
+}
+  .grid-txt {
+    align-items: left;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px; 
+    cursor: url(image/star.png)10 10, auto;
+    transition: all 0.2s ease-in-out;
+}
+
+.grid-txt:hover span{
+    transform-origin: 0 center;
+    /* transform: scale(0.8); */
+    font-weight: bolder;
+    color: rgb(157, 23, 23);
+    cursor: url(image/star.png)10 10, auto;
 }
