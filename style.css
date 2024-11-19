@@ -97,7 +97,6 @@ a {
     transition: transform 5s ease-out;
 }
 
-/* transition photo */
 
 .grid .grid-projet:hover img {
     transform: rotateZ(360deg);
@@ -106,12 +105,8 @@ a {
 
 .grid .grid-projet:not :hover img {
     transition: transform 6s ease-in;
-    cursor: url(image/star.png)10 10, auto; /* Animation plus rapide à la sortie */
+    cursor: url(image/star.png)10 10, auto;
 }
-
-
-
-
 
 .grid-main {
     background-color: rgb(245, 141, 198);
@@ -122,8 +117,7 @@ a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     margin: 0px;
-    cursor: url(image/star.png)10 10, auto;
-    
+    cursor: url(image/star.png)10 10, auto;   
 }
 
 @media (min-width:950px) {
@@ -137,7 +131,6 @@ a {
     cursor: url(image/star.png)10 10, auto;
 }
 
-
 .grid-texte {
     border-top: 1px solid rgb(255, 255, 255);
     display: grid;
@@ -149,15 +142,6 @@ a {
     font-size: 20px; 
     cursor: url(image/star.png)10 10, auto;
 }
-
-/* .grid-texte::before{
-    content:"";
-    position: absolute;
-    width:100%;
-    height: 10px;
-    background: red;
-
-} */
 
 .grid-texte span{
     transition: all 0.2s ease-in-out;
@@ -173,14 +157,12 @@ a {
     cursor: url(image/star.png)10 10, auto;
 }
 
-
 .grid-projet{
     background-color:white;
     display: block;
     padding-bottom: 50px;
     cursor: url(image/star.png)10 10, auto;
 }
-
 
 img,
 video {
@@ -209,10 +191,6 @@ video {
     top: 15px;
     cursor: url(image/star.png)10 10, auto;
 }
-
-
-/*pages secondaires*/
-
 
 .grid2{
     background-color: rgb(255, 255, 255);
@@ -244,12 +222,14 @@ video {
     padding: 0;
     box-sizing: border-box;
     cursor: url(image/star.png)10 10, auto;
-  }
+}
+
   .grid-projet2{
     background-color:rgb(245, 141, 198);
     display: block;
     cursor: url(image/star.png)10 10, auto;
 }
+
   .grid-txt {
     border-top: 1px solid rgb(255, 255, 255);
     display: grid;
@@ -264,7 +244,6 @@ video {
 
 .grid-txt:hover span{
     transform-origin: 0 center;
-    /* transform: scale(0.8); */
     font-weight: bolder;
     color: rgb(157, 23, 23);
     cursor: url(image/star.png)10 10, auto;
@@ -277,27 +256,26 @@ video {
    
     overflow: hidden;
     cursor: url(image/star.png)10 10, auto;
-  }
+}
   
-  .rotating-gif {
+.rotating-gif {
     width: 100%;
     height: 100%;
     object-fit: cover;
     animation: rotateImage 5s linear infinite;
-    cursor: url(image/star.png)10 10, auto;  /* Animation de rotation de 5 secondes en boucle */
-  }
-  
-  /* Animation pour faire tourner l'image */
-  @keyframes rotateImage {
+    cursor: url(image/star.png)10 10, auto; 
+}
+
+@keyframes rotateImage {
     0% {
-      transform: rotate(0deg);  /* Position initiale de l'image */
+      transform: rotate(0deg); 
     }
     100% {
-      transform: rotate(360deg);  /* Rotation complète de 360 degrés */
+      transform: rotate(360deg); 
     }
-  }
+}
 
-  .footer2{
+.footer2{
     font-family: "CirrusCumulus", sans-serif;
     position: fixed;
   bottom: 0;
@@ -320,8 +298,9 @@ video {
     padding-left: 30px;
     padding-right: 120px;
     line-height: 1.5;
-    transition: font-weight 0.3s ease;  /* Transition douce lors du changement de style */
-  }
+    transition: font-weight 0.3s ease; 
+}
+
 .h2-block:hover:hover {
     font-family: "CirrusCumulus";
     font-size: 18px;
@@ -331,15 +310,13 @@ video {
     padding-left: 30px;
     padding-right: 120px;
     line-height: 1.5;
-    transition: font-weight 0.3s ease; /* Met tout le texte du bloc en gras */
-  }
+    transition: font-weight 0.3s ease;
+}
   
-  
- /* Style de base pour les spans à modifier */
 .highlight {
     font-family: "CirrusCumulus";
     font-size: 18px;
-  }
+}
   
   .h2-block:hover .highlight {  
     color:rgb(245, 141, 198);
