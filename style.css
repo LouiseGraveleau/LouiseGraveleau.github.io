@@ -2,6 +2,8 @@ body{
     font-family: 'Courier New', Courier, monospace;
     margin: 0%;
     cursor: url(image/star.png)10 10, auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
 }
 
 @font-face {
@@ -34,7 +36,6 @@ h3 {
     font-family: "CirrusCumulus";
     font-size: 78px;
     align-items: center;
-    font-weight: bolder;
     justify-items: center;
     color: rgb(151, 53, 53);
     padding-left: 30px;
@@ -47,7 +48,6 @@ h2 {
     font-family: "CirrusCumulus";
     font-size: 18px;
     align-items: center;
-    font-weight: bolder;
     justify-items: center;
     color: rgb(245, 141, 198);
     padding-left: 30px;
@@ -75,8 +75,14 @@ h5 {
     justify-items: left;
     color: rgb(151, 53, 53);
     padding-left: 700px;
-    
     line-height: 1.5;
+    cursor: url(image/star.png)10 10, auto;
+}
+
+h6 {
+    font-family: "CirrusCumulus";
+    font-size: 12px;cursor:
+    url(image/star.png)10 10, auto;
 }
 
 a {
@@ -84,11 +90,11 @@ a {
     color: rgb(0, 0, 0);
 }
 .grid-container {
-    perspective: 1000px;  /* Crée une perspective pour le retournement */
+    perspective: 1000px; 
   }
 
 .grid img {
-    transition: transform 5s ease-out; /* Durée de la transition pour l'effet */
+    transition: transform 5s ease-out;
 }
 
 /* transition photo */
@@ -98,8 +104,9 @@ a {
     cursor: url(image/star.png)10 10, auto;
 }
 
-.grid .grid-projet:not (:hover) img {
-    transition: transform 6s ease-in; /* Animation plus rapide à la sortie */
+.grid .grid-projet:not :hover img {
+    transition: transform 6s ease-in;
+    cursor: url(image/star.png)10 10, auto; /* Animation plus rapide à la sortie */
 }
 
 
@@ -155,6 +162,7 @@ a {
 .grid-texte span{
     transition: all 0.2s ease-in-out;
     background: rgba(255, 255, 255, 0);
+    cursor: url(image/star.png)10 10, auto;
 }
 
 .grid-texte:hover span{
@@ -169,6 +177,8 @@ a {
 .grid-projet{
     background-color:white;
     display: block;
+    padding-bottom: 50px;
+    cursor: url(image/star.png)10 10, auto;
 }
 
 
@@ -186,15 +196,18 @@ video {
     top: 32px;
     display: grid;
     /* gap: 24px; */
+    cursor: url(image/star.png)10 10, auto;
 }
 
 .header .sticky {
     position: sticky;
     display: grid;
+    cursor: url(image/star.png)10 10, auto;
 }
 
 .header .sticky {
     top: 15px;
+    cursor: url(image/star.png)10 10, auto;
 }
 
 
@@ -230,18 +243,23 @@ video {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: url(image/star.png)10 10, auto;
   }
   .grid-projet2{
     background-color:rgb(245, 141, 198);
     display: block;
+    cursor: url(image/star.png)10 10, auto;
 }
   .grid-txt {
-    align-items: left;
+    border-top: 1px solid rgb(255, 255, 255);
+    display: grid;
+    align-items: stretch;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 25px; 
+    line-height: 1.3;
+    padding: 15px;
+    font-size: 20px; 
     cursor: url(image/star.png)10 10, auto;
-    transition: all 0.2s ease-in-out;
 }
 
 .grid-txt:hover span{
@@ -250,4 +268,81 @@ video {
     font-weight: bolder;
     color: rgb(157, 23, 23);
     cursor: url(image/star.png)10 10, auto;
+}
+
+.gif-container {
+    width: 700px;
+    height: 700px;
+    margin-left: 270px;
+    margin-top: 100PX;
+    overflow: hidden;
+    cursor: url(image/star.png)10 10, auto;
+  }
+  
+  .rotating-gif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: rotateImage 5s linear infinite;
+    cursor: url(image/star.png)10 10, auto;  /* Animation de rotation de 5 secondes en boucle */
+  }
+  
+  /* Animation pour faire tourner l'image */
+  @keyframes rotateImage {
+    0% {
+      transform: rotate(0deg);  /* Position initiale de l'image */
+    }
+    100% {
+      transform: rotate(360deg);  /* Rotation complète de 360 degrés */
+    }
+  }
+
+  .footer2{
+    font-family: "CirrusCumulus", sans-serif;
+    position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);  /* Centre horizontalement */
+  width: 100%;
+  background-color: white;
+  color: rgb(157, 23, 23);
+  text-align: center;
+  padding: 5px 0;
+  cursor: url(image/star.png)10 10, auto;
+}
+
+.h2-block {
+    font-family: "CirrusCumulus";
+    font-size: 18px;
+    align-items: center;
+    justify-items: center;
+    color: rgb(245, 141, 198);
+    padding-left: 30px;
+    padding-right: 120px;
+    line-height: 1.5;
+    transition: font-weight 0.3s ease;  /* Transition douce lors du changement de style */
+  }
+.h2-block:hover:hover {
+    font-family: "CirrusCumulus";
+    font-size: 18px;
+    align-items: center;
+    justify-items: center;
+    color:  rgb(157, 23, 23);
+    padding-left: 30px;
+    padding-right: 120px;
+    line-height: 1.5;
+    transition: font-weight 0.3s ease; /* Met tout le texte du bloc en gras */
+  }
+  
+  
+ /* Style de base pour les spans à modifier */
+.highlight {
+    font-family: "CirrusCumulus";
+    font-size: 18px;
+  }
+  
+  .h2-block:hover .highlight {  
+    color:rgb(245, 141, 198);
+    letter-spacing: 2px;
+    
 }
